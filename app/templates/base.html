@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for unidad in detalles %}
+
+        <a href="{{ url_for('bp_nombres.index') }}">REGRESAR</a>
+
+        <th><h3>NOMBRE: {{ unidad.name }}</a> </h3></th>
+            </tr>
+            <tr>
+                <th><h3>ESPECIE: {{ unidad.species }}</h3></th>
+            </tr>
+            <tr>
+                <th><h3>ESTADO: {{ unidad.status }}</h3></th>
+            </tr>
+                <th><h3>Genero: {{ unidad.gender }}</h3></th>
+            <tr>
+                <th><h3>LOCALIDAD: {{ unidad.location }}</h3></th>
+            </tr>
+
+            <td>
+            <th>
+
+
+
+
+                <img src=" {{ unidad.image }}" >
+            </th>
+            </td>
+{% endfor %}
+
+
+
+
+
+
+
+
+</body>
+</html>

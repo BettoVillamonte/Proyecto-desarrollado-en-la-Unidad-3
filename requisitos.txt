@@ -1,0 +1,5 @@
+Flask
+Flask-WTF
+pymongo
+python-dotenv
+requests
